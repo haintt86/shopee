@@ -3,6 +3,7 @@ import 'package:cupertino_flutter_app/widget/create_room_widget.dart';
 import 'package:cupertino_flutter_app/widget/enter_status_widget.dart';
 import 'package:cupertino_flutter_app/widget/live_photo_room_widget.dart';
 import 'package:cupertino_flutter_app/widget/logo_search_widget.dart';
+import 'package:cupertino_flutter_app/widget/status_entering_widget.dart';
 import 'package:cupertino_flutter_app/widget/text_section_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -22,7 +23,7 @@ class _NewsFeedTabState extends State<NewsFeedTab>{
           child: Column(
                 children: [
                   FirstRowWidget(),
-                  EnterStatusWidget(
+                  StatusEnteringWidget(
                       onStatusUpdated: _xulyCallBack),
                   ThirdRowWidget(),
                   FourthRowWidget(),
